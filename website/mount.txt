@@ -1,0 +1,30 @@
+wsl2 enable for linux terminal and install ubuntu for windows
+install docker
+sudo chmod 666 /var/run/docker.sock cmd for permission denied request
+docker pull image_name
+docker run -d image_name:tag_name === run container
+docker start/stop container_id===stopping runing con
+docker ps -aq ====display all container id
+docker rm contain_name
+docker run --name cont_name -v /$(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx
+docker exec -it cont_name bash
+====================================
+creating build 
+1.nginx Image - use unzip to get contents- create dockerfile in correct format -
+FROM nginx:latest
+ADD . /usr/share/nginx/html
+docker build --tag image_name:latest
+
+2.Api image - - use unzip to get contents- create dockerfile in format
+FROM node:latest 
+WORKDIR  /app
+ADD . .
+RUN npm install 
+CMD node index.js
+
+docker build --tag image_name:latest
+=====================================
+using cache memory to run layers faster
+1.add lines in dockerfile after 2nd cmd    ADD package*.json ./
+
+=====================================

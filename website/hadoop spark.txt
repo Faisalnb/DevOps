@@ -1,0 +1,26 @@
+Data warehouse consists of data related to subject ,which is integrated from mulltiple sources and is (Stable)non volatile and works on concept of OLAP (online analytics processing)
+
+for integrating data it uses 1. Query driven approach 2. update driven approach
+
+metadata repo: 1.Business ;def of ownership and policices
+2. Currency; active archive or purged state
+3. Mapping data; contents,partioning,cleaning,transform
+4. algorithm of aggregation at diff levels
+
+Funtions of tool and utilities in DW:1. Extract,transform and load	.data wrangling,refreshing from data source
+
+Data cube : helps represent data in fact table and dimention format ie, multi D format
+Data marts : grouping data  based on app and organization needs
+
+Schema-Schema is a logical description of the entire database
+======================
+Char of HDFS- Fault tolerance, scalability, 
+hadoop cluster arch:
+Name node- sends request for retrieving data,data is in block(128MB) and files are in replication mode.Metadata is stored in data block within a single rack
+data nodes - sends heartbeat for health monitoring
+Namespace - sends edit logs and fs image as data backup of name node,,changes are stored in ns-metadata
+
+YARN provide resourcess for running apps.Archt is similar to hdfs.rm and nm
+enable max cluster util and no mig of data (for running cluster in other computer) is needed
+YARN support multiple processing model like spark( not dep on java python ruby)
+MapReduce model was slow , cant handle iterative and stream process

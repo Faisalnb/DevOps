@@ -1,0 +1,35 @@
+permissive - error val= null 
+Drop off - error values are dropped
+save to log file at badrecordpath
+https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/2846145894691497/871100655391470/2196045337084656/latest.html
+
+Unique key gen strategies
+mono increasing id - does not generate distinct keys
+zip index - 
+zip wirh unique
+row no, or rankover
+
+==========================
+
+local and global table have diff acessebility across clusters
+managed table ismanaged in hive warehouse while external tables are managed in user lcoation
+
+
+Repartition will reshuffle and parition it
+
+=============================
+
+ways to create new col:
+1 using spark native func
+2 using udf
+3 using sql
+4 using pandas
+
+===========================
+ci/cd deployment using yml files
+
+path which has  cluster location
+vg-variable group(host-token)
+pre-requisite for installation (databricks -cli)
+auth /config tokens 
+databricks create cluster --json file

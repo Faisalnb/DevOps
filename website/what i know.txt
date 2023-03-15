@@ -1,0 +1,5 @@
+what i know ?
+azure ci/cd pl using yml files and knowledge of diff mllib needed(which and how) by data scientist /analyst
+python dataframes,dfs,indexing,paritioning+optimization,repartitioning
+hive sql commands(temp tables, delta tables)
+data factory as orchestration env for clusters
